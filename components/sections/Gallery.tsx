@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import SectionLabel from "@/components/ui/SectionLabel";
-import { cn } from "@/lib/utils";
+import { cn, asset } from "@/lib/utils";
 
 interface Item {
   src: string;
@@ -16,7 +16,7 @@ interface Item {
 
 const items: Item[] = [
   {
-    src: "/images/ebru-with-baby.jpeg",
+    src: asset("/images/ebru-with-baby.jpeg"),
     alt: "Bebek antrenmanı",
     caption: "Bebek Programı",
     category: "Bebek Jakuzisi",
@@ -24,7 +24,7 @@ const items: Item[] = [
     dataSection: "gallery-bebek"
   },
   {
-    src: "/images/kids-group.jpeg",
+    src: asset("/images/kids-group.jpeg"),
     alt: "Grup dersi",
     caption: "Grup Dersleri",
     category: "Etkinlikler",
@@ -32,7 +32,7 @@ const items: Item[] = [
     dataSection: "gallery-grup"
   },
   {
-    src: "/images/child-pink.jpeg",
+    src: asset("/images/child-pink.jpeg"),
     alt: "Mutlu çocuk",
     caption: "Mutlu Yüzler",
     category: "Genel",
@@ -40,7 +40,7 @@ const items: Item[] = [
     dataSection: "gallery-cocuk"
   },
   {
-    src: "/images/ebru-2.jpeg",
+    src: asset("/images/ebru-2.jpeg"),
     alt: "Havuz görünümü",
     caption: "Ana Havuz",
     category: "2 Havuz",
@@ -48,7 +48,7 @@ const items: Item[] = [
     dataSection: "gallery-havuz"
   },
   {
-    src: "/images/underwater-trainer.jpeg",
+    src: asset("/images/underwater-trainer.jpeg"),
     alt: "Su altı eğitim",
     caption: "Akuatik Terapi",
     category: "Terapi Odaları",
@@ -56,7 +56,7 @@ const items: Item[] = [
     dataSection: "gallery-terapi"
   },
   {
-    src: "/images/ebru-1.jpeg",
+    src: asset("/images/ebru-1.jpeg"),
     alt: "Eğitmen",
     caption: "Eğitmen Kadromuz",
     category: "Genel",
@@ -64,7 +64,7 @@ const items: Item[] = [
     dataSection: "gallery-egitmen"
   },
   {
-    src: "/images/ebru-portrait.jpeg",
+    src: asset("/images/ebru-portrait.jpeg"),
     alt: "Press",
     caption: "Basında Biz",
     category: "Etkinlikler",
@@ -72,7 +72,7 @@ const items: Item[] = [
     dataSection: "gallery-basin"
   },
   {
-    src: "/images/ebru-magazine.jpeg",
+    src: asset("/images/ebru-magazine.jpeg"),
     alt: "Press magazine",
     caption: "Kocaeli Life",
     category: "Etkinlikler",

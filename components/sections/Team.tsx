@@ -3,7 +3,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import SectionLabel from "@/components/ui/SectionLabel";
-import { cn } from "@/lib/utils";
+import { cn, asset } from "@/lib/utils";
 
 interface Member {
   name: string;
@@ -21,7 +21,7 @@ const team: Member[] = [
     bio:
       "Yetişkin, okul öncesi, bebek ve özel bireyler yüzme antrenörü. Aqua Fitness Pro Eğitmeni, uluslararası Halliwick ve Watsu uygulayıcısı.",
     certs: ["Halliwick", "Watsu", "Aqua Fitness Pro"],
-    img: "/images/ebru-portrait.jpeg",
+    img: asset("/images/ebru-portrait.jpeg"),
     alt: "Ebru Gücin"
   },
   {
@@ -30,7 +30,7 @@ const team: Member[] = [
     bio:
       "Okan Üniversitesi mezunu fizyoterapist. Ortopedik manuel terapi, osteopati, watsu ve ameliyat sonrası su içi egzersiz uzmanı.",
     certs: ["Manuel Terapi", "Osteopati", "Watsu"],
-    img: "/images/underwater-trainer.jpeg",
+    img: asset("/images/underwater-trainer.jpeg"),
     alt: "Oğuz Gücin"
   }
 ];

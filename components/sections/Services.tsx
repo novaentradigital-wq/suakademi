@@ -3,7 +3,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useTilt } from "@/hooks/useTilt";
 import SectionLabel from "@/components/ui/SectionLabel";
-import { cn } from "@/lib/utils";
+import { cn, asset } from "@/lib/utils";
 
 interface Service {
   category: string;
@@ -21,7 +21,7 @@ const services: Service[] = [
     title: "Yetişkin Yüzme & Aqua Fitness",
     desc:
       "Su korkusunu yenmekten profesyonel yüzme tekniklerine, AquaFitness ve AquaGym ile düşük etkili yüksek verimli antrenmanlar.",
-    img: "/images/ebru-1.jpeg",
+    img: asset("/images/ebru-1.jpeg"),
     alt: "Yetişkin yüzme dersi",
     span: "lg:col-span-7 lg:row-span-2",
     dataSection: "service-yuzme"
@@ -30,7 +30,7 @@ const services: Service[] = [
     category: "0-4 Yaş",
     title: "Bebek & Çocuk Programları",
     desc: "AquaBabySwim, Bebek SPA, bebek masajı ve okul öncesi yüzme.",
-    img: "/images/child-pink.jpeg",
+    img: asset("/images/child-pink.jpeg"),
     alt: "Bebek ve çocuk programları",
     span: "lg:col-span-5",
     dataSection: "service-bebek"
@@ -39,7 +39,7 @@ const services: Service[] = [
     category: "Terapi",
     title: "Akuatik Terapi",
     desc: "Hidroterapi, Watsu, Halliwick, ortopedik manuel terapi ve rehabilitasyon.",
-    img: "/images/underwater-trainer.jpeg",
+    img: asset("/images/underwater-trainer.jpeg"),
     alt: "Akuatik terapi seansı",
     span: "lg:col-span-5",
     dataSection: "service-terapi"
@@ -49,7 +49,7 @@ const services: Service[] = [
     title: "Salon Dersleri",
     desc:
       "Klinik Pilates, yoga ve zumba dersleriyle vücut farkındalığınızı geliştirin. Su dışında da formda kalın.",
-    img: "/images/kids-group.jpeg",
+    img: asset("/images/kids-group.jpeg"),
     alt: "Salon dersleri",
     span: "lg:col-span-12",
     dataSection: "service-salon"

@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import SectionLabel from "@/components/ui/SectionLabel";
 import RevealText from "@/components/ui/RevealText";
+import { asset } from "@/lib/utils";
 
 const features = [
   {
@@ -45,7 +46,7 @@ export default function About() {
                 style={{ y: imgY, scale: 1.18 }}
               >
                 <Image
-                  src="/images/ebru-2.jpeg"
+                  src={asset("/images/ebru-2.jpeg")}
                   alt="Su Akademi kurucusu Ebru Gücin havuzda"
                   fill
                   sizes="(max-width: 1024px) 100vw, 40vw"
